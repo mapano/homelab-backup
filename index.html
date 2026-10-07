@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Homelab Backup — prywatna integracja do przechowywania zaszyfrowanych kopii zapasowych na Google Drive.">
+<title>Homelab Backup</title>
+<style>
+:root{color-scheme:light}body{font:17px/1.7 system-ui,sans-serif;color:#172b38;background:#f4f7f8;margin:0}main{max-width:740px;margin:7vh auto;padding:36px;background:white;border:1px solid #dce5e9;border-radius:14px}h1{font-size:2.3rem;line-height:1.2;margin-top:10px}h2{font-size:1.2rem;margin-top:30px}a{color:#125d83;text-underline-offset:3px}nav{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #dce5e9;margin-top:32px;padding-top:20px}.label{color:#496371;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}@media(max-width:600px){main{margin:16px;padding:24px}}
+</style>
+<main>
+<p class="label">Prywatna integracja · Google Drive</p>
+<h1>Homelab Backup</h1>
+<p>Homelab Backup to integracja przeznaczona do wykonywania i odzyskiwania zaszyfrowanych kopii zapasowych prywatnego sejfu haseł operatora. Korzysta z narzędzi restic i rclone oraz miejsca na jego koncie Google Drive.</p>
+<h2>Jak działa integracja</h2>
+<p>Operator udziela dostępu do Google Drive przez ekran zgody Google. Kopie są szyfrowane lokalnie przez restic przed wysłaniem. Google Drive przechowuje zaszyfrowane pliki repozytorium; hasło odszyfrowujące pozostaje poza tym repozytorium.</p>
+<h2>Zakres dostępu</h2>
+<p>Docelowa konfiguracja używa uprawnienia <code>drive.file</code>, aby tworzyć, odczytywać, aktualizować i usuwać pliki oraz foldery utworzone przez tę integrację. Nie potrzebuje dostępu do poczty ani kontaktów. Połączenie i wykonywanie kopii rozpoczynają się dopiero po skonfigurowaniu integracji przez operatora.</p>
+<h2>Użytek osobisty i kontakt</h2>
+<p>Integracja jest przeznaczona wyłącznie do osobistego użytku operatora. Nie oferuje rejestracji ani usługi backupu innym osobom. Ta publiczna strona opisuje integrację i nie udostępnia sejfu ani kopii zapasowych.</p>
+<p>Operator: Mateusz Panoszewski<br>Kontakt: <a href="mailto:mateusz.panoszewski@gmail.com">mateusz.panoszewski@gmail.com</a></p>
+<nav aria-label="Informacje"><a href="privacy.html">Polityka prywatności</a></nav>
+</main>
+</html>

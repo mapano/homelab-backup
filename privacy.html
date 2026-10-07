@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Polityka prywatności integracji Homelab Backup.">
+<title>Polityka prywatności — Homelab Backup</title>
+<style>
+:root{color-scheme:light}body{font:17px/1.7 system-ui,sans-serif;color:#172b38;background:#f4f7f8;margin:0}main{max-width:740px;margin:7vh auto;padding:36px;background:white;border:1px solid #dce5e9;border-radius:14px}h1{font-size:2rem;line-height:1.2}h2{font-size:1.2rem;margin-top:28px}a{color:#125d83;text-underline-offset:3px}footer{border-top:1px solid #dce5e9;margin-top:32px;padding-top:20px;color:#496371}@media(max-width:600px){main{margin:16px;padding:24px}}
+</style>
+<main>
+<a href="index.html">← Homelab Backup</a>
+<h1>Polityka prywatności</h1>
+<p>Dokument opisuje przetwarzanie danych przez prywatną integrację <strong>Homelab Backup</strong>. Operator: Mateusz Panoszewski, kontakt: <a href="mailto:mateusz.panoszewski@gmail.com">mateusz.panoszewski@gmail.com</a>.</p>
+<h2>Cel i zakres danych</h2>
+<p>Integracja korzysta z Google Drive wyłącznie do przechowywania, sprawdzania i odzyskiwania zaszyfrowanych kopii zapasowych operatora. Uprawnienie <code>drive.file</code> ogranicza dostęp do plików i folderów utworzonych przez aplikację lub wyraźnie jej udostępnionych. Integracja przetwarza zawartość tych kopii oraz metadane potrzebne do ich obsługi, takie jak identyfikatory, nazwy, rozmiary i daty plików.</p>
+<p>Tokeny OAuth, w tym token odświeżania, są przechowywane w chronionej konfiguracji na serwerze operatora, aby umożliwić automatyczne wykonywanie kopii. Integracja nie zbiera hasła do konta Google i nie wymaga dostępu do Gmaila ani kontaktów.</p>
+<h2>Przechowywanie i zabezpieczenie</h2>
+<p>Kopie są szyfrowane lokalnie przez restic przed przesłaniem do Google Drive. Hasło odszyfrowujące repozytorium nie jest wysyłane w jego plikach. Dane źródłowe i lokalne kopie pozostają na urządzeniach operatora. Dostęp do konta Google i jego zabezpieczenia podlegają również zasadom Google.</p>
+<h2>Udostępnianie i wykorzystanie</h2>
+<p>Integracja przekazuje zaszyfrowane pliki do Google Drive w celu ich przechowywania. Operator nie sprzedaje danych, nie wykorzystuje ich do reklamy, profilowania ani trenowania modeli sztucznej inteligencji i nie udostępnia ich innym odbiorcom w ramach działania integracji.</p>
+<p>Wykorzystanie informacji otrzymanych z interfejsów Google API odbywa się zgodnie z <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym wymaganiami Limited Use.</p>
+<h2>Usunięcie danych i cofnięcie dostępu</h2>
+<p>Operator może zatrzymać zadania backupu, usunąć kopie z Google Drive i opróżnić kosz, a następnie cofnąć dostęp integracji w ustawieniach <a href="https://myaccount.google.com/connections">połączeń konta Google</a>. Cofnięcie zgody blokuje dalszy dostęp, ale samo nie usuwa wcześniej zapisanych kopii. Tokeny lokalne można usunąć z konfiguracji rclone. Kopie są przechowywane do usunięcia przez operatora lub przez skonfigurowane zasady retencji.</p>
+<h2>Ta strona informacyjna</h2>
+<p>Strona nie zawiera formularzy, narzędzi analitycznych ani skryptów śledzących. Dostawca hostingu GitHub Pages może przetwarzać dane techniczne odwiedzin zgodnie z <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">polityką prywatności GitHub</a>.</p>
+<footer>Ostatnia aktualizacja: 7 października 2026 r.</footer>
+</main>
+</html>
